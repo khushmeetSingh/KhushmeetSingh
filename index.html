@@ -45,19 +45,16 @@
             <div id="social-media-links">
                 <p id="soc-line">Know me better on:</p>
                 <div class="social-icons">
-                    <a class=" 	fa fa-google-plus link-to-social-media google"></a>
+                    <a class=" 	fa fa-google-plus link-to-social-media google " href="mailto:skhushmeet7@gmail.com"></a>
                 </div>
                 <div class="social-icons">
-                    <a class="fa fa-facebook-square link-to-social-media "></a>
-                </div>
-                <div class="social-icons">
-                    <div class="gradient-for-insta" mouseover=>
-                        <a class="fa fa-instagram link-to-social-media insta"></a>
+                    <div class="gradient-for-insta" >
+                        <a class="fa fa-instagram link-to-social-media insta" href="https://www.instagram.com/skhushmeet7/"></a>
 
                     </div>
                 </div>
                 <div class="social-icons">
-                    <a class="fa fa-twitter link-to-social-media"></a>
+                    <a class="fa fa-twitter link-to-social-media" href="https://mobile.twitter.com/khushmeetrockz"></a>
                 </div>
             </div>
 
@@ -119,11 +116,11 @@
     <h1 id="skills-headline">Skills</h1>
     <div id="skills">
         <div id="firstS">
-            <div id="firstFront">first
+            <div id="firstFront">
                 <img src="photos/kotlin.png" alt="" class="img-in-skills" id="first-skill">
                 <div id="info-firstS" class="text-in-div">
 
-                    more info
+                    More info
                     <img src="arrows.png" alt="" id="arrow1" class="arrows" onclick=arrower(this)+flipback(this)>
                 </div>
             </div>
@@ -144,8 +141,6 @@
                     Easy to pick up, so you can create powerful applications immediately. 
                 </p>
                 <div id="back-firstS" class="text-in-div">
-
-                    transform back
                     <img src="arrows.png" alt="" id="arrow2" class="arrows" onclick=arrower(this)+flipback(this)>
                 </div>
             </div>
@@ -154,11 +149,10 @@
 
 
         <div id="secondS">
-            <div id="secondFront">first
+            <div id="secondFront">
                 <img src="photos/ps.png" alt="" class="img-in-skills" id="first-skill">
                 <div id="info-secondS" class="text-in-div">
-
-                    more info
+                    More info
                     <img src="arrows.png" alt="" id="arrow3" class="arrows" onclick=arrower(this)+flipback(this)>
                 </div>
             </div>
@@ -181,7 +175,6 @@
 
                 </p>
                 <div id="back-secondS" class="text-in-div">
-                    transform back
                     <img src="arrows.png" alt="" id="arrow4" class="arrows" onclick=arrower(this)+flipback(this)>
                 </div>
             </div>
@@ -189,11 +182,11 @@
 
         </div>
         <div id="thirdS">
-            <div id="thirdFront">first
+            <div id="thirdFront">
                 <img src="photos/java.png" alt="" class="img-in-skills" id="first-skill">
                 <div id="info-thirdS" class="text-in-div">
 
-                    more info
+                    More info
                     <img src="arrows.png" alt="" id="arrow5" class="arrows" onclick=arrower(this)+flipback(this)>
                 </div>
             </div>
@@ -213,7 +206,6 @@
                     Java is the most popular, widely used object-oriented programming language. The security feature of Java makes it popular and widely used.
                 </p>
                 <div id="back-thirdS" class="text-in-div">
-                    transform back
                     <img src="arrows.png" alt="" id="arrow6" class="arrows" onclick=arrower(this)+flipback(this)>
                 </div>
             </div>
@@ -221,11 +213,11 @@
 
         </div>
         <div id="fourthS">
-            <div id="fourthFront">first
+            <div id="fourthFront">
                 <img src="photos/c++.png" alt="" class="img-in-skills" id="first-skill">
                 <div id="info-fourthS" class="text-in-div">
 
-                    more info
+                    More info
                     <img src="arrows.png" alt="" id="arrow7" class="arrows" onclick=arrower(this)+flipback(this)>
                 </div>
             </div>
@@ -244,7 +236,6 @@
                     C++ can be found just about everywhere you look. It powers search engines, VR applications, air travel, movie production, and even exploration on Mars!
                 </p>
                 <div id="back-fourthS" class="text-in-div">
-                    transform back
                     <img src="arrows.png" alt="" id="arrow8" class="arrows" onclick=arrower(this)+flipback(this)>
                 </div>
             </div>
@@ -277,16 +268,7 @@
     <br>
 
     <h1 class="education-headline">Contact Me (via message)</h1>
-    <!-- <div id="education-div">
-        <br><br><br>
-        <p class="ed-text">10th standard(matricultion)[CBSE] : 84%</p>
-        <br>
-        <p class="ed-text">12th standard(matricultion)[CBSE] : 94.2%</p>
-        <br>
-        <p class="ed-text">B.Sc.(Hounours) Computer Science[SGTBKC, Delhi University] : Pursuing</p>
-        <p class="ed-text"></p> 
-    </div> -->
-
+    
     <div class="contact-me-form-div">
         <p class="field-name">Name:</p>
         <input type="text" placeholder="Your name"  class="input-for-contact">
@@ -319,20 +301,9 @@
         skillFill(skills[2],3);
         skillFill(skills[3],4);
 
-        var aspectRatio = document.documentElement.clientHeight / document.documentElement.clientWidth;
-        var nameAni = document.getElementsByClassName("name-animation");
-        nameAni.style.height = aspectRatio * document.documentElement.clientWidth;
 
 
 
-        function rotator() {
-            console.log("loaded");
-            document.getElementById("name-one").style.transform += "rotateY(360deg)";
-        }
-
-        function jumper() {
-            document.getElementById("desc").scrollIntoView({ behavior: 'smooth' });
-        }
         function flipback(item) {
             var parent = item.parentNode.parentNode.parentNode;
             parent.style.transform += "rotateY(180deg)";
@@ -347,13 +318,6 @@
                     arrowsList[i].style.transform = "translateX(0px)";
                 }
             }
-        }
-
-        function translateDown(item) {
-            console.log("clicked");
-            item.style.transform += "translateY(100vh)";
-            if (item.style.transform != "translateY(0px)")
-                jumper();
         }
 
         function highlightMyParent(item,parentNoNo)
